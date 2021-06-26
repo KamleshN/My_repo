@@ -198,7 +198,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/login_btn_xlent"
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"

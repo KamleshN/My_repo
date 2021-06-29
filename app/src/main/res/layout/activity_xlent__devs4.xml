@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Xlent_Devs3">
 
     <ImageView
@@ -21,49 +22,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:fontFamily="@font/rubik_medium"
         android:text="Add your skills"
+        android:textColor="#2E2E2E"
         android:textSize="24dp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
         android:layout_width="310dp"
         android:layout_height="46dp"
         android:layout_marginTop="30dp"
-        app:cardCornerRadius="14dp"
         android:elevation="10dp"
         app:cardBackgroundColor="#E2E2E2"
+        app:cardCornerRadius="14dp"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:id="@+id/cardView6">
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/rubik_light"
+                android:hint="Search for skill"
+                android:paddingLeft="10dp"
+                android:textColor="#7D7D7D"
+                android:textColorHint="#7D7D7D"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:id="@+id/eye"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="-28dp"
+                android:layout_weight="1"
                 android:src="@drawable/search" />
 
-        </RelativeLayout>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:background="@android:color/transparent"
-            android:text="Search for skill" />
+        </LinearLayout>
 
 
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
         android:layout_width="106dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"

@@ -22,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik_light"
         android:text="continue with"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,8 +96,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik_light"
         android:text="Or"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
@@ -128,9 +131,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
+            android:fontFamily="@font/rubik_light_italic"
             android:hint="Username or Email*"
             android:paddingLeft="10dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textColorHint="#7D7D7D"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
     </androidx.cardview.widget.CardView>
 
@@ -148,27 +155,34 @@
         app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/eye"
+                android:layout_toLeftOf="@+id/eye"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/rubik_light_italic"
+                android:hint="@string/password"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7D7D7D"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/eye"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="-25dp"
+                android:layout_weight="1"
                 android:src="@drawable/eye" />
-        </RelativeLayout>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:hint="@string/password"
-            android:paddingLeft="10dp"
-            android:textColor="@color/black" />
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -176,8 +190,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="Forgot password? needhelp "
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/rubik_light"
+        android:text="Forgot password  ? need help "
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/cardView4"
         app:layout_constraintTop_toBottomOf="@+id/cardView4" />
@@ -201,8 +216,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:textColor="@color/black"
+        android:fontFamily="@font/rubik_light"
         android:text="Not have an account yet ? Sign Up"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
